@@ -259,7 +259,6 @@ span {
 
 
 
-
 .contact {
     background-color: var(--second-bg-color);
     justify-content: center;
@@ -315,9 +314,45 @@ span {
     cursor: pointer;
 }
     
-    
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
 
+}
+footer{
+    background-color: var(--bg-color);
+   
+}
+.top-icon{
+
+    justify-content: center;
+}
+.top-icon a{
+    justify-content: center;
+    align-items: center;
+}
+.top-icon a i{
+    padding-left: .05rem;
+    color: var(--main-color);
+    font-size: 3rem;
+   
+    border-radius: 50%;
+}
+.top-icon a i:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.footer-text{
     
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+.footer-text a{
+    text-decoration: none;
+    color: var(--text-color);
+}
   
    
  
