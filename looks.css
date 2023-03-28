@@ -42,6 +42,10 @@ body {
     background-color: var(--bg-color);
 }
 
+.header.sticky{
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
 
 .portfolio h4 {
     font-size: 2.5rem;
@@ -313,21 +317,21 @@ span {
     background-color: var(--main-color);
     cursor: pointer;
 }
-    
+
+footer{
+    background-color: var(--bg-color);
+   
+}
+
 .footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
+}
 
-}
-footer{
-    background-color: var(--bg-color);
-   
-}
 .top-icon{
-
     justify-content: center;
 }
 .top-icon a{
@@ -338,17 +342,18 @@ footer{
     padding-left: .05rem;
     color: var(--main-color);
     font-size: 3rem;
-   
     border-radius: 50%;
 }
+
 .top-icon a i:hover{
     box-shadow: 0 0 1rem var(--main-color);
 }
+
 .footer-text{
-    
     font-weight: 500;
     font-size: 1.6rem;
 }
+
 .footer-text a{
     text-decoration: none;
     color: var(--text-color);
