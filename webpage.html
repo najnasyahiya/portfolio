@@ -10,6 +10,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -170,20 +172,20 @@
 
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="#">
+        <form id="submit-form" action="">
 
             <div class="input-box">
-                <input id="name" type="text" placeholder="Full Name">
-                <input id="email" type="email" placeholder="Email">
+                <input name="name" id="name" type="text" placeholder="Full Name">
+                <input name="email" id="email" type="email" placeholder="Email">
             </div>
 
             <div class="input-box">
-                <input id="mobile" type="tel" placeholder="Mobile">
-                <input id="subject" type="text" placeholder="Subject">
+                <input name="mobile" id="mobile" type="tel" placeholder="Mobile">
+                <input name="subject" id="subject" type="text" placeholder="Subject">
             </div>
 
             <div class="textbox">
-               <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+               <textarea name="message" id="" cols="30" rows="10" placeholder="Your message"></textarea>
                <input type="submit" value="Submit" class="btn">
             </div>
 
@@ -195,13 +197,41 @@
 
 
     <footer class="footer">
-        <div class="footer-text">
-            <a href="mailto:najnasyahiya@gmail.com">Email Me at: najnasyahiya@gmail.com</a>
+
+        <div class="footer-mail">
+            <a href="mailto:najnasyahiya@gmail.com"><i class='bx bx-envelope'></i></a>
         </div>
+
+        <div class="footer-text">
+            <a href="mailto:najnasyahiya@gmail.com">najnasyahiya@gmail.com</a>
+        </div>
+
         <div class="top-icon">
             <a href="#home"><i class='bx bx-up-arrow-circle'></i></a>
         </div>
     </footer>
+
+
+
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbzeZSDe_UOn9kCSA0bG0VzR8ZYRPkaaq2NLsdV1DadtT6nCYJG5dlRKtxtwPujraK1_Jw/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 
 
     <script src="https://unpkg.com/scrollreveal"></script>
