@@ -41,8 +41,8 @@ ScrollReveal({
     ScrollReveal().reveal('#mobile', { origin:'left' });
     ScrollReveal().reveal('#subject', { origin:'right' });
     ScrollReveal().reveal('.textbox', { origin:'bottom' });
-    ScrollReveal().reveal('.home-content h1', { origin:'top' });
-    ScrollReveal().reveal('.home-content p', { origin:'bottom' });
+    //ScrollReveal().reveal('.home-content h1', { origin:'top' });
+    //ScrollReveal().reveal('.home-content p', { origin:'bottom' });
 
 
     const typed = new Typed('.multiple-text', {
