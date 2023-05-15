@@ -31,13 +31,13 @@ ScrollReveal({
     });
 
     ScrollReveal().reveal('.home-content', { origin:'left' });
-    ScrollReveal().reveal('.home-image', { origin:'right' });
+    ScrollReveal().reveal('.home-image', { origin:'top' });
     // ScrollReveal().reveal('.about-content', { origin:'bottom' });
     // ScrollReveal().reveal('.about-image', { origin:'top' });
     // ScrollReveal().reveal('.projects .box', { origin:'top' });
     // ScrollReveal().reveal('.contact h2', { origin:'top' });
     // ScrollReveal().reveal('#name', { origin:'left' });
-    // ScrollReveal().reveal('#email', { origin:'right' });
+    ScrollReveal().reveal('#email', { origin:'right' });
     // ScrollReveal().reveal('#mobile', { origin:'left' });
     // ScrollReveal().reveal('#subject', { origin:'right' });
     // ScrollReveal().reveal('.textbox', { origin:'bottom' });
